@@ -12,6 +12,12 @@
 		<AssemblyOriginatorKeyFile>SocketIOClient.Windows7.snk</AssemblyOriginatorKeyFile>
 		<Authors>doghappy</Authors>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DebugType>none</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DebugType>none</DebugType>
+	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="matthid-System.Net.WebSockets.Client.Managed" Version="1.0.1" />
 	</ItemGroup>
